@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  var students = [];
+  var name;
+  // loop to ask 4 times
+  for (var i=0; i<4; i++){
+    name = prompt("Please Enter student's Name: ");
+  // push in the array
+    students.push(name);
+  }
+  var scores = [];
+  var mark;
+  for (var i=0; i<4; i++){
+    mark = prompt("Please Enter " + students[i] + "'s score: ");
+    scores.push(mark);
+  }
+  // loop to print out 4 names
+  document.write("<ol>");
+  for (var i=0; i<students.length; i++){
+    document.write(students[i] + "scored" + scores[i] + "<br>");
+  }
+  document.write("</ol>");
+</script>
