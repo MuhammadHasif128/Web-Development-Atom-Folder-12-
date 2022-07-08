@@ -1,11 +1,10 @@
 <script type="text/javascript">
       var Allstudents = [];
 
-      for (var i = 1; i <= 4; i++) {
-
-        var student = {};
-        student.name = prompt("Please enter student " + i +"'s name");
-        student.score = prompt("Please enter student "+ i +"'s score");
+      for (var i=0; i <= 4; i++) {
+        var student={};
+        student.name=prompt("Please enter student " + (i+1) +"'s name");
+        student.score=prompt("Please enter student "+ (i+1) +"'s score");
         Allstudents.push(student);
       }
 
