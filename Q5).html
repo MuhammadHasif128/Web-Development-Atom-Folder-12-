@@ -1,0 +1,18 @@
+<script type="text/javascript">
+      var Allstudents = [];
+
+      for (var i = 1; i <= 4; i++) {
+
+        var student = {};
+        student.name = prompt("Please enter student " + i +"'s name");
+        student.score = prompt("Please enter student "+ i +"'s score");
+        Allstudents.push(student);
+      }
+
+      document.write("<ol>");
+      for (var i = 0; i < Allstudents.length; i++) {
+        document.write("<li>"+Allstudents[i].name + " scored "+ Allstudents[i].score +"</li>");
+      }
+      document.write("</ol>");
+
+</script>
