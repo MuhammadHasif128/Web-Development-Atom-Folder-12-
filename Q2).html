@@ -1,13 +1,10 @@
 <script type="text/javascript">
-  var scores=[];
-  scores.push(67);
-  scores.push(90);
-  scores.push(88);
-  scores.push(70);
-  var total=0;
-  for (var i=0; i<scores.length; i++) {
+  var scores = [67,90,88,70];
+  var total = 0;
+  for (var i = 0; i < scores.length; i++) {
+    total+= scores[i];
     document.write(scores[i] + "<br>");
-    total = total + scores[i];
   }
-  document.write("<br>" + "Total of All Numbers is: " + total);
+  document.write("<br>")
+  document.write("Total scores is " + total);
 </script>
