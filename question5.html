@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+    /*
+    var students = [];
+    var name;
+
+    for (var i = 0; i < 4; i++) {
+      name = prompt("Please enter student's name");
+      students.push(name);
+    }
+
+    var scores = [];
+    var marks;
+
+    for (var i = 0; i < students.length; i++) {
+      marks = prompt("Please enter " + students[i] + "'s score ");
+      scores.push(marks);
+    }
+
+    var lol = [];
+
+    for (var i = 0; i < students.length; i++) {
+        lol.push({"name":students[i] ,"score" : scores[i]});
+    }
+
+    document.write("<ol>");
+    for (var p in lol) {
+      document.write("<li>"+lol[p].name+ " scored " +lol[p].score +"</li>");
+    }
+    document.write("</ol>");
+
+    */
+
+    // input of students
+    // input of scores
+    // collate the student and score and put it into array as objects
+
+    var Allstudents = [];
+
+    for (var i = 1; i <= 4; i++) {
+
+      var student = {};
+      student.name = prompt("Please enter student" + i +"'s name");
+      student.score = prompt("Please enter student"+ i +"'s score");
+      Allstudents.push(student);
+    }
+
+    document.write("<ol>");
+    for (var i = 0; i < Allstudents.length; i++) {
+      document.write("<li>"+Allstudents[i].name + " scored "+ Allstudents[i].score +"</li>");
+    }
+    document.write("</ol>");
+
+    </script>
+
+  </body>
+</html>

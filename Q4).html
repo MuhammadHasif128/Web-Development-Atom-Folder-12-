@@ -1,11 +1,15 @@
 <script type="text/javascript">
-  var student = {"name": "Ali", "score": 89};
-  var students = {"name": "Hasif", "score": 90};
+  var student = {name: "Ali", score: 89};
   for (var info in student) { //for each property/attributes
     document.write(info + ":" + student[info] + "<br>"); //when p = name, student[name]=Ali and marks. NOT ARRAY, jus to pick out
   }
-  document.write("<br>")
-  for (var infos in students) { //for each property/attributes
-    document.write(infos + ":" + students[infos] + "<br>"); //when p = name, student[name]=Ali and marks. NOT ARRAY, jus to pick out
+</script>
+
+<!-----WITHOUT FOR LOOP----->
+<script type="text/javascript">
+  student = {
+    name: "Ali",
+    score: 89,
   }
+  document.write("name:" + student.name + "<br>" + "score:" + student.score);
 </script>
